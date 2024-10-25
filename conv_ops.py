@@ -61,7 +61,7 @@ h_out=((h_in+2*p-h_filt)/s)+1
 w_out=((w_in+2*p-w_filt)/s)+1
 adds=n_filt*h_out*w_out*c_in*h_filt*w_filt
 muls=adds
-c_out=c_in
+c_out=n_filt
 divs=0
 
 print(int(c_out)) # output channel count
